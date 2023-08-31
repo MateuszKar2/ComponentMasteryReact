@@ -17,16 +17,16 @@ return (
 
   <ul className="stats">
     <li>
+      <span className="quantity">Followers</span>
       <span className="label">{stats.followers}</span>
-      <span className="quantity">1000</span>
     </li>
     <li>
-      <span className="label">{stats.views}</span>
-      <span className="quantity">2000</span>
+      <span className="quantity">Views</span>
+      <span className="label">{stats.views}</span>      
     </li>
     <li>
+      <span className="quantity">Likes</span>
       <span className="label">{stats.likes}</span>
-      <span className="quantity">3000</span>
     </li>
   </ul>
 </div>
