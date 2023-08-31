@@ -1,14 +1,16 @@
-import {Profile, Statistics} from './components';
+import {Profile, Statistics, FriendList, TransactionHistory} from './components';
 
 import user from './data/user.json';
 import data from './data/data.json';
+import friends from './data/data.json';
+import transactions from './data/data.json';
 
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
-        display: 'flex',
+        // display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -25,9 +27,22 @@ export const App = () => {
     />
 
     <Statistics
+    id={data.id}
     title={data.label}
     stats={data.percentage}
     />
+    {/* <Statistics title="Upload stats" stats={data} />
+    <Statistics stats={data} /> */}
+
+    <FriendList 
+    avatar={friends.avatar} 
+    name={friends.name}
+    isOnline={friends.name}
+    />;
+
+    <TransactionHistory 
+    items={transactions} />;
+
     </div>
 
 );
