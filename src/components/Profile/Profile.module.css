@@ -1,0 +1,14 @@
+
+
+.profile {
+    margin: 100px;
+    width: 300px;
+    height: 545px;
+    background-color: whitesmoke;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
+
+.description {
+    padding-top: 50px;
+}
