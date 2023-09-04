@@ -4,30 +4,30 @@ import css  from './Profile.module.css';;
 
 export const Profile  = ({username, tag, location, avatar, stats}) => {
 return (
-<div className="profile">
-  <div className="description">
+<div className={css.profile}>
+  <div className={css.description}>
     <img
       src={avatar}
       alt="User avatar"
-      className="avatar"
+      className={css.avatar}
     />
-    <p className="name">{username}</p>
-    <p className="tag">{tag}</p>
-    <p className="location">{location}</p>
+    <p className={css.name}>{username}</p>
+    <p className={css.tag}>{tag}</p>
+    <p className={css.location}>{location}</p>
   </div>
 
-  <ul className="stats">
+  <ul className={css.stats}>
     <li>
-      <span className="quantity">Followers</span>
-      <span className="label">{stats.followers}</span>
+      <span className={css.quantity}>Followers</span>
+      <span className={css.label}>{stats.followers}</span>
     </li>
     <li>
-      <span className="quantity">Views</span>
-      <span className="label">{stats.views}</span>      
+      <span className={css.quantity}>Views</span>
+      <span className={css.label}>{stats.views}</span>      
     </li>
     <li>
-      <span className="quantity">Likes</span>
-      <span className="label">{stats.likes}</span>
+      <span className={css.quantity}>Likes</span>
+      <span className={css.label}>{stats.likes}</span>
     </li>
   </ul>
 </div>

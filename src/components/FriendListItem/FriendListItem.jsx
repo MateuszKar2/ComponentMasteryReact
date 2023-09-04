@@ -6,15 +6,15 @@ const colorFalse = <div style={{color: "red"}}/>;
 
 export const FriendListItem = ({avatar, name, isOnline, }) => {
     return (
-            <li className="item">
-                <span className="status">
+            <li className={css.item}>
+                <span className={css.status}>
                 {{isOnline} === true ? colorTrue : colorFalse }
                 </span>
-                    <img className="avatar" 
+                    <img className={css.avatar} 
                         src={avatar}
                         alt="User avatar" 
                         width="48" />
-                <p className="name">{name}</p>
+                <p className={css.name}>{name}</p>
             </li>
     )
 }

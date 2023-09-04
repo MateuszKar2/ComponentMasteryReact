@@ -4,16 +4,16 @@ import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const Statistics = ({title, stats}) => {
   return  (
-    <section className="statistics">
-    <h2 className="title">{title}</h2>
-    <ul className="stat-list">
+    <section className={css.statistics}>
+    <h2 className={css.title}>{title}</h2>
+    <ul className={css.statList}>
     {
   stats.map(el => {
     const colorList = { backgroundColor: getRandomHexColor() };
     return (
-      <li className="item" style={colorList} key={el.id}>
-      <span className="label">{el.label}</span>
-      <span className="percentage">{el.percentage}%</span>
+      <li className={css.item} style={colorList} key={el.id}>
+      <span className={css.label}>{el.label}</span>
+      <span className={css.percentage}>{el.percentage}%</span>
     </li>
     );
   })
@@ -22,7 +22,7 @@ export const Statistics = ({title, stats}) => {
 </section>
     )
 }
-
+(console.log(Statistics));
 
 PropTypes.Statistics = {
   id: PropTypes.number,
