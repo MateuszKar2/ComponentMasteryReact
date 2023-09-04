@@ -1,0 +1,18 @@
+.table {
+    border: 5px solid black;
+    background-color: chocolate;
+    margin: 100px;
+}
+
+.tableUp {
+    width: 250px;
+    height: 50px;
+    background-color: aqua;
+    border: 5px solid white;
+}
+
+.tableDown {
+    text-align: center;
+    border: 5px solid white;
+    margin: 0;
+}
