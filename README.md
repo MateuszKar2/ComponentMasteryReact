@@ -40,7 +40,7 @@ Follow these steps to get the project up and running on your local machine:
   
 5.Open the app in your browser at http://localhost:3000.
 
-#How to Use
+# How to Use
 Create New Components: You can create new React components inside the src/components directory.
 
 Pass Props: Try passing props between components to share data.
